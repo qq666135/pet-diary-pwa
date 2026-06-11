@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>毛孩子成长记</title>
+    <meta name="description" content="记录与你家毛孩子的每一个温暖瞬间 - 成长日记·AI写真·精美模板·一键分享" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <!-- PWA Meta -->
+    <meta name="theme-color" content="#FF8C42" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="毛孩子成长记" />
+
+    <!-- Icons -->
+    <link rel="icon" href="./assets/app-icon-BQ-19yqf.png" />
+    <link rel="apple-touch-icon" href="./assets/app-icon-BQ-19yqf.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/app-icon-BQ-19yqf.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/app-icon-BQ-19yqf.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="./assets/app-icon-BQ-19yqf.png" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- 禁止翻译（中文 App） -->
+    <meta name="google" content="notranslate" />
+    <script type="module" crossorigin src="./assets/index-D7mHdVT8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C2cISYFV.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 全局崩溃兜底 -->
+    <script>
+      window.addEventListener('error', function(e) {
+        if (e.filename && e.filename.includes('chunk')) {
+          document.getElementById('root').innerHTML = '<div style="text-align:center;padding:40px"><p style="font-size:64px">🐾</p><p>加载失败，请重启App</p></div>'
+        }
+      })
+      window.addEventListener('unhandledrejection', function(e) {
+        console.warn('Unhandled:', e.reason)
+      })
+    </script>
+
+    <!-- PWA Service Worker 注册 -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./sw.js').then(function(reg) {
+            console.log('[PWA] SW registered:', reg.scope)
+          }).catch(function(err) {
+            console.warn('[PWA] SW registration failed:', err)
+          })
+        })
+      }
+    </script>
+  </body>
+</html>

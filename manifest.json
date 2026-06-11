@@ -1,0 +1,81 @@
+{
+  "name": "毛孩子成长记",
+  "short_name": "毛孩子",
+  "description": "记录与你家毛孩子的每一个温暖瞬间 - 成长日记·AI写真·精美模板",
+  "start_url": "./?utm_source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFBF7",
+  "theme_color": "#FF8C42",
+  "lang": "zh-CN",
+  "categories": ["lifestyle", "social", "photo"],
+  "icons": [
+    {
+      "src": "./app-icon.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./app-icon.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./app-icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./app-icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./app-icon.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "./app-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./app-icon.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "label": "毛孩子成长记"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "添加毛孩子",
+      "short_name": "添加",
+      "description": "添加一个新的毛孩子",
+      "url": "./?action=add-pet",
+      "icons": [{ "src": "./app-icon.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "AI写真馆",
+      "short_name": "AI写真",
+      "description": "用AI生成写真照片",
+      "url": "./?action=ai-studio",
+      "icons": [{ "src": "./app-icon.png", "sizes": "96x96" }]
+    }
+  ]
+}
